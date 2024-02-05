@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import dataset from "../datsets/dataset.json";
-import { LiaSortSolid } from "react-icons";
+import { LiaSortSolid } from "react-icons/lia";
 import "./sortTable.css"
 
 export default function SortTable() {
