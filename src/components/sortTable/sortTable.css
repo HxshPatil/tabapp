@@ -1,0 +1,59 @@
+table {
+    /* border: 2px solid rgb(0, 0, 0); */
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    font-family: "poppins";
+  }
+
+/* .header{
+  background-image: linear-gradient(blue,purple);
+}  */
+
+  thead {
+    text-align: left;
+    background-image: linear-gradient(to right,rgb(227, 86, 227),rgb(131, 131, 236));
+  }
+
+  th{
+    padding-left: 5px;
+    height:20px;
+  }
+
+  .heading-wrapper{
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  td {
+    padding: 5px;
+  }
+
+  .nameRow{
+    display: flex;
+    gap: 5px;
+    align-items: CENTER;
+  }
+  tr:nth-child(even) {
+    background-color: #f6f8f8;
+ }
+
+ 
+  .profilePic{
+    height:20px;
+    width:auto;
+   
+  }
+
+  .up-down{
+    width:10px;
+    fill:white;
+   
+  }
+
+  .bottom{
+    background-color: #e5e6e6;
+  }
+
+  
