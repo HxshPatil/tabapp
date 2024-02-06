@@ -5,10 +5,11 @@ table {
     overflow: hidden;
     font-family: "poppins";
     font-size:10px;
+    border-spacing: 0;
   }
 
   .container{
-    width: 1000px;
+    width:1080px;
   }
 /* .header{
   background-image: linear-gradient(blue,purple);
@@ -16,20 +17,18 @@ table {
 
   thead {
     text-align: left;
-    background-image: linear-gradient(to right,rgb(227, 86, 227),rgb(131, 131, 236));
+    background-image: linear-gradient(to right, #de52ff, #ca4afe, #b542fd, #9e3cfb, #8437fa);
   }
 
   th{
     padding-left: 5px;
-    height:20px;
+    height:30px;
   }
 
   .heading-wrapper{
     color: white;
     display: flex;
     align-items: center;
-    
-   
   }
 
   td {
@@ -68,14 +67,16 @@ table {
     background-color: #e5e6e6;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
    
     .container{
-      width: 80%;
+      width: 90%;
     }
+  }
 
+  @media (max-width: 768px) {
     table{
-      font-size: 7px;
+      font-size: 8px;
     }
 
     .profilePic{
@@ -83,25 +84,20 @@ table {
       width:auto;
      
     }
-
-  
   }
 
   @media (max-width: 480px) {
    
-    /* .container{
-      width: 90%;
-    } */
-
-    table{
-      font-size: 5px;
+    th{
+      padding-left: 3px;
+      height:20px;
+    }
+    td {
+      padding: 3px;
     }
 
-    .profilePic{
-      height:10px;
-      width:auto;
-     
+    .nameRow{
+      gap: 2.5px;
     }
 
-  
-  }
+    }
