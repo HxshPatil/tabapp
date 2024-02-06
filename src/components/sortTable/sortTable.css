@@ -4,7 +4,7 @@ table {
     height: 200px;
     overflow: hidden;
     font-family: "poppins";
-    font-size:10px;
+    font-size:15px;
     border-spacing: 0;
   }
 
@@ -22,17 +22,19 @@ table {
 
   th{
     padding-left: 5px;
-    height:30px;
+    height:40px;
   }
 
   .heading-wrapper{
     color: white;
     display: flex;
     align-items: center;
+    
   }
 
   td {
     padding: 5px;
+    color: grey;
   }
 
   .nameRow{
@@ -40,6 +42,7 @@ table {
     gap: 5px;
     align-items: CENTER;
     height: 100%;
+    
   }
 
   /* .numRow, .marketRow, .weightRow, .valueRow{
@@ -52,7 +55,7 @@ table {
 
  
   .profilePic{
-    height:20px;
+    height:30px;
     width:auto;
    
   }
@@ -76,28 +79,30 @@ table {
 
   @media (max-width: 768px) {
     table{
-      font-size: 8px;
+      font-size: 12px;
     }
 
     .profilePic{
-      height:15px;
+      height:20px;
       width:auto;
      
+    }
+    th{
+      height:30px;
     }
   }
 
   @media (max-width: 480px) {
-   
     th{
-      padding-left: 3px;
+      padding-left: 5px;
       height:20px;
     }
     td {
-      padding: 3px;
+      padding: 5px;
     }
 
     .nameRow{
-      gap: 2.5px;
+      gap: 4px;
     }
 
     }
