@@ -34,6 +34,7 @@ table {
     display: flex;
     gap: 5px;
     align-items: CENTER;
+    height: 100%;
   }
   tr:nth-child(even) {
     background-color: #f6f8f8;

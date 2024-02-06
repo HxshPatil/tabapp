@@ -5,7 +5,8 @@ import "./sortTable.css"
 
 export default function SortTable() {
 const [data, setData] = useState(dataset);
-
+const [search, setSearch]= useState('');
+console.log(search);
 const[order, setOrder] = useState("ASC");
 
 const sorting =(col) =>{
@@ -26,7 +27,16 @@ const sorting =(col) =>{
 }
 
   return (
-    <div>
+    <div className="container">
+      <div className="search">
+      <input
+   type="text"
+   placeholder="Search here"
+   onChange={(e)=> setSearch(e.target.value)}
+  //  value={searchInput} 
+  />
+      </div>
+      
         <table>
       <thead>
         <th onClick={()=> sorting("name")}><div className="heading-wrapper">Name<LiaSortSolid className="up-down"/></div></th>
@@ -36,7 +46,9 @@ const sorting =(col) =>{
         <th onClick={()=> sorting("value")}><div className="heading-wrapper">Value<LiaSortSolid className="up-down"/></div></th>
       </thead>
       <tbody>
-      {data.map((val) => (
+      {data.filter((val)=>{
+        return search.toLowerCase() === ''? val:val.name.toLowerCase().includes(search);
+      }).map((val) => (
           <tr key={val.index}>
             <td className="nameRow"><img
                 className="profilePic"
